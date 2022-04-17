@@ -82,7 +82,7 @@ let warntyDiv3 = document.createElement("div");
 let warntyDiv31 = document.createElement("div");
 let warntyDiv311 = document.createElement("div");
 let warntyDiv3110 = document.createElement("img")
-warntyDiv3110.src = "./Icons/Delivery Icon.png";
+warntyDiv3110.src = "../Icons/Delivery Icon.png";
 warntyDiv311.appendChild(warntyDiv3110);
 let warntyDiv312 = document.createElement("p");
 warntyDiv312.innerHTML = "Guaranteed Delivery in 24 days T&C Apply";
@@ -92,7 +92,7 @@ warntyDiv31.appendChild(warntyDiv312);
 let warntyDiv32 = document.createElement("div");
 let warntyDiv321 = document.createElement("div");
 let warntyDiv3210 = document.createElement("img")
-warntyDiv3210.src = "./Icons/rupees icon.png";
+warntyDiv3210.src = "../Icons/rupees icon.png";
 warntyDiv321.appendChild(warntyDiv3210);
 let warntyDiv322 = document.createElement("p");
 warntyDiv322.innerHTML = "COD Available";
@@ -102,7 +102,7 @@ warntyDiv32.appendChild(warntyDiv322);
 let warntyDiv33 = document.createElement("div");
 let warntyDiv331 = document.createElement("div");
 let warntyDiv3310 = document.createElement("img")
-warntyDiv3310.src = "./Icons/10days.png";
+warntyDiv3310.src = "../Icons/10days.png";
 warntyDiv331.appendChild(warntyDiv3310);
 let warntyDiv332 = document.createElement("p");
 warntyDiv332.innerHTML = "10 Days Replacement"
@@ -112,7 +112,7 @@ warntyDiv33.appendChild(warntyDiv332);
 let warntyDiv34 = document.createElement("div");
 let warntyDiv341 = document.createElement("div");
 let warntyDiv3410 = document.createElement("img")
-warntyDiv3410.src = "./Icons/security.png";
+warntyDiv3410.src = "../Icons/security.png";
 warntyDiv341.appendChild(warntyDiv3410);
 let warntyDiv342 = document.createElement("p");
 warntyDiv342.innerHTML = "6 months Warranty T&C Apply"
@@ -141,7 +141,7 @@ warntyDiv.appendChild(warntyDiv4);
 
 let divButt = document.createElement("div");
 let anchor = document.createElement("a");
-anchor.href = "./cartPage.html";
+anchor.href = "../HTML/cartPage.html";
 anchor.target = "_blank"
 let cartButt = document.createElement("button");
 cartButt.innerHTML = "BUY NOW";
@@ -201,7 +201,7 @@ let div4what = document.createElement("span");
 div4what.innerHTML = "Contact us on";
 let div4iconBox = document.createElement("span");
 let div4icon = document.createElement("img");
-div4icon.src = "./Icons/whatsapp.png";
+div4icon.src = "../Icons/whatsapp.png";
 let div4Link = document.createElement("a");
 div4Link.href = "https://api.whatsapp.com/send?phone=917093427583";
 div4Link.target = "_blank";
