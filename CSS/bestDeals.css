@@ -237,6 +237,11 @@ img {
     display: flex;
 }
 
+#filterBox {
+    height: 50px;
+    background-color: aqua;
+}
+
 #footerBox {
     background-color: rgb(255, 244, 244);
     height: auto;
