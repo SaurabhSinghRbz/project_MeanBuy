@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#navBar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+}
+#leftDiv{
+    width: auto;
+    height: auto;
+    padding: 1%;
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+}
+#a{
+    grid-area: a;
+}
+#a>img{
+    width: 240px;
+}
+#b{
+    grid-area: b;
+}
+#b>input{
+    margin-top: 30px;
+    height: 25px;
+    width: 300px;
+}
+#c{
+    grid-area: c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+}
+#d{
+    grid-area: d;
+}
+#d>button{
+    
+}
+#rightDiv{
+    display: flex;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    padding: 1%;
+    margin-top: 20px;
+}
+#rightDiv img{
+    width: 30px;
+}
+#yourCart{
+    width: 100%;
+    height: auto;
+}
+#yourCart>#cartHead>p{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    padding: 3%;
+    padding-left: 6%;
+}
+
+
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.container > h1{
+	padding: 20px 0;
+}
+.cart{
+	display: flex;
+}
+.products{
+	flex: 0.75;
+}
+.product:hover{
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	transform: scale(1.01);
+}
+.product > img:hover{
+	transform: scale(1.04);
+}
+.product-remove:hover{
+	background-color: white;
+	color: green;
+	font-weight: 600;
+	border: 1px solid green;
+}
+
+
+
+.cart-total{
+	flex: 0.25;
+	margin-left: 20px;
+	padding: 20px;
+	height: 240px;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: tomato;
+	color: white;
+	text-decoration: none;
+}
+.cart-total a:hover{
+	background-color: red;
+}
+
+
+@media screen and (max-width: 700px){
+	.remove{
+		display: none;
+	}
+	.product{
+		height: 150px;
+	}
+	.product > img{
+		height: 150px;
+		width: 200px;
+	}
+	.product-name, .product-price, .product-offer{
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 900px){
+	.cart{
+		flex-direction: column;
+	}
+	.cart-total{
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 1220px){
+	.container{
+		max-width: 95%;
+	}
+}
