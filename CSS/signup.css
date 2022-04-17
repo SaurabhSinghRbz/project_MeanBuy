@@ -1,0 +1,173 @@
+
+#main{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#leftpart{
+/* border: 1px solid black; */
+width: 63%;
+height: 100%;
+
+
+}
+#leftpart>h3{
+    color: orange;
+    font-size: 20px;
+}
+#leftpart>p{
+ text-align: center;
+}
+#signup{
+  
+    background-color: orange;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border: none;
+}
+#login{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+#facebook{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    width: 55%;
+    height: 22px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    background-color:#4267b2;
+    border-radius: 2px;
+    color: white;
+    font-size: medium;
+}
+#facebook>div{
+    margin: 2px auto;
+}
+#google{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    width: 40%;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+  
+    background-color:#2c62be;
+    border-radius: 2px;
+    color: white;
+    font-size: medium;
+}
+#gimg{
+
+    width: 15%;
+    margin: 0.5%;
+    /* margin-left: 0px; */
+    }
+    #gimg+div{
+        width: 75%;
+        text-align: center;
+        padding-top: 2px;
+    }
+    
+    
+img{
+    width: 100%;
+    height: 100%;
+}
+#rightpart{
+   width: 30%;
+   /* border: 1px solid black; */
+   height: 100%; 
+}
+#cartitem{
+    border: 1px solid rgb(151, 150, 150);
+    margin-top: 20px;
+
+}
+
+button{
+    background-color: #354c8c;
+    color: white;
+    border: none;
+    /* padding-bottom: 5px; */
+    text-align: center;
+}
+input{
+    margin-top: 5px;
+    width:99%;
+    height: 40px;
+}
+#editbtn{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid  salmon;
+    padding:5px;
+    color: rgb(211, 140, 7);
+    cursor: pointer;
+
+}
+#rightpart>div>h4{
+   color: rgb(75, 72, 72);
+   text-align: center;
+   font-size: 20px;
+}
+.gray{
+    color: rgb(75, 72, 72);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.banner>img{
+    width: 100px;
+    height: 100px;
+}
+.banner{
+    text-align: center;
+    margin-top:10px;
+}
+.orangebar{
+    width: 12%;
+    height: 4px;
+    margin:auto;
+    background-color: rgb(255, 111, 0);
+}
+#underline{
+    border: 0.1px solid rgb(242, 240, 240);
+}
+#belowtotal{
+    border: 0.1px solid rgb(242, 240, 240);
+    width: 93%;
+    margin: auto;
+}
+.alreadyhave{
+    text-decoration: underline;
+    color: rgb(53, 81, 72);
+}
+@media (min-width: 600px) and (max-width: 950px){
+    #login{
+        width: 60%;
+    }
+}
+@media (min-width: 60px) and (max-width: 600px){
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    #rightpart{
+        width: 100%;
+
+    }
+    #leftpart{
+        width: 100%;
+    }
+    #login{
+        width: 90%;
+    }
+}
