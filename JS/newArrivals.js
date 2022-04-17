@@ -400,28 +400,38 @@ function displayAllProducts(product) {
 displayAllProducts(productData);
 
 var subcategories = [
-    "Keyboards & Mouse",
-    "Home Improvement",
     "Bluetooth Earphone",
-    "Sporting Bluetooth",
-    "Wireless Chargers",
-    "Wireless Speakers",
-    "School Backpacks",
-    "Fitness Merchandise",
-    "Home Decor",
-    "Kid's Shoes",
+    "Watches",
+    "Electronics ",
+    "Smart Watches",
+    "Wall Art",
+    "Men's Watches",
+    "Mobiles Accessories",
+    "Home Improvement",
+    "Small Appliances ",
+    "Toys",
+    "Top Selling Smart Watches ",
     "Makeup Accessories",
     "Wired Headphones",
+    "Bluetooth Earphone",
+    "Sporting Bluetooth",
+    "Fashion",
+    "Home Decor",
+    "Wireless Speakers",
+    "Wireless Chargers",
+    "Kitchen Wares",
+    "Water Bottles ",
+    "School Backpacks",
+    "Fitness Merchandise",
+    "Top Selling Ear Buds ",
+    "Kid's Shoes",
     "Smart Watches",
-    "Men's Watches",
     "Electronics",
-    "Wall Art",
     "Laptops",
-    "Mobiles Accessories",
     "Power Banks",
     "Apple Accessories",
 ];
-
+subcategories.reverse();
 function displaySubcategories(sub) {
     var allCatDiv = document.getElementById("subCat");
     sub.forEach(function (ele) {
