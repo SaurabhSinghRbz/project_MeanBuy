@@ -142,15 +142,15 @@ warntyDiv.appendChild(warntyDiv4);
 let divButt = document.createElement("div");
 let anchor = document.createElement("a");
 anchor.href = "../HTML/cartPage.html";
-anchor.target = "_blank"
+// anchor.target = "_blank"
 let cartButt = document.createElement("button");
 cartButt.innerHTML = "BUY NOW";
 
 let addToButt = document.createElement("button")
 addToButt.innerHTML = "ADD TO CART"
-cartButt.onclick = function () {
+// cartButt.onclick = function () {
 
-};
+// };
 
 addToButt.onclick = function () {
     var cartArr = [];
