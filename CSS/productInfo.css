@@ -1,0 +1,672 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.navBar {
+    /* height: 17%; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: auto;
+}
+
+/* --> navBar */
+.navbar.sticky {
+
+    width: 98vw;
+    margin-top: -10vw;
+    height: 20vh;
+    background-color: white;
+
+
+}
+
+.navbar.sticky ul li a {
+    color: #000;
+
+}
+
+.logosection {
+    width: 98vw;
+    height: 13vh;
+    display: flex;
+}
+
+.logo {
+    width: 20vw;
+    height: 11vh;
+    border: 0.1vh solid transparent;
+    margin-left: 2vh;
+    margin-top: 2vh;
+
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.search {
+    width: 27vw;
+    height: 4.5vh;
+    border: 0.1vh solid #cececece;
+    margin-left: 3.1vw;
+    margin-top: 6.5vh;
+}
+
+.search p {
+    width: 15vw;
+    font-size: 1.5vw;
+}
+
+.saler {
+    width: 19vw;
+    height: 4vh;
+    margin-top: 3.5vh;
+    margin-left: 8vw;
+    border: 0.1vh solid transparent;
+    font-size: 1vw;
+    font-weight: 500;
+
+}
+
+.saler a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1vw;
+    font-weight: 530;
+    color: #000;
+}
+
+.loginblock {
+    width: 12vw;
+    height: 9vh;
+    margin-top: 0.4vh;
+    display: block;
+}
+
+.profile {
+    width: 12vw;
+    height: 4vh;
+    border: 0.1vh solid transparent;
+    font-size: 1.2vw;
+    font-weight: 500;
+    display: flex;
+    margin-top: 2.2vh;
+    margin-left: 1.5vw;
+}
+
+.profile a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: -0.5vh;
+    color: #000;
+}
+
+.gust {
+    width: 12vw;
+    height: 4vh;
+    border: 0.1vh solid transparent;
+    font-size: 1.2vw;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin-top: -2.2vw;
+    margin-left: 1.8vw;
+}
+
+.gust h4 {
+    font-weight: 510;
+}
+
+.icon {
+    width: 1.7vw;
+    height: 3.2vh;
+}
+
+.Addto {
+    width: 2vw;
+    height: 3vh;
+    color: #ff8e06;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+}
+
+#count {
+    font-size: 1.1vw;
+    margin-top: 2.2vw;
+    margin-left: 0.5vh;
+}
+
+#count {
+    font-weight: 500;
+}
+
+.links {
+    width: 80vw;
+    height: 7vh;
+
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10vh;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.links ul a li {
+    list-style: none;
+    margin-top: 1.5vh;
+    margin-left: 6vw;
+    font-size: 1.5vw;
+}
+
+.submenu {
+    display: none;
+    width: 90vw;
+    height: 60vh;
+    position: absolute;
+    background-color: white;
+    border: 0.1vh solid white;
+    margin-top: 0.5vh;
+    margin-left: -17.9vh;
+    -webkit-box-shadow: 0 0.5vw 0.5vw 0.5vw #cececece;
+    -moz-box-shadow: 0 0.5vw 0.5vw 0.5vw #cececece;
+    box-shadow: 0 0.5vw 0.5vw 0.5vw #cececece;
+    cursor: pointer;
+    z-index: 1;
+
+
+}
+
+.links ul li:hover .submenu {
+    display: block;
+    display: flex;
+}
+
+.first {
+    width: 13vw;
+    height: 50vh;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+
+.first h4 {
+    font-size: 1.3vw;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.first p {
+    font-size: 1.2vw;
+    margin-top: 2vh;
+    font-weight: 480;
+    color: black
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contentBox {
+    margin-top: 2%;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+#prodImg {
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#prodImgBox {
+    /* border: 2px solid red; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prodImgBox>img {
+    height: 80%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* #prodTitle {
+    border: 2px solid black;
+} */
+
+#prodTitle> :first-child {
+    padding-left: 10px;
+    height: auto;
+}
+
+#prodTitle> :first-child> :first-child {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 10px 5px 0px;
+}
+
+#prodTitle> :first-child> :nth-child(2) {
+
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+#prodTitle> :first-child> :nth-child(2)> :first-child {
+    background-color: green;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+#prodTitle> :first-child> :nth-child(2)> :last-child {
+    color: orange;
+    text-decoration: underline;
+    font-size: 10px;
+    padding: 8px;
+    padding-bottom: 0px;
+}
+
+#prodTitle> :first-child> :nth-child(2)> :last-child:hover {
+    cursor: pointer;
+}
+
+#prodTitle> :first-child> :nth-child(3) {
+    color: orange;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#prodTitle> :first-child> :nth-child(4) {
+    color: green;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+#prodTitle> :first-child> :nth-child(5) {
+    color: green;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#prodTitle> :first-child> :nth-child(6) {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#prodTitle> :first-child> :nth-child(6) :last-child {
+    text-decoration: underline;
+}
+
+#prodTitle> :first-child> :nth-child(6) :last-child:hover {
+    cursor: pointer;
+}
+
+#prodTitle> :first-child> :nth-child(7) {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+#prodTitle> :first-child> :nth-child(7) :last-child {
+    color: green;
+
+}
+
+#warntyBox {
+    padding-left: 10px;
+    height: auto;
+}
+
+#warntyBox> :first-child {
+    /* background-color: aqua; */
+    height: auto;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+#warntyBox> :nth-child(2) {
+    /* background-color: rebeccapurple; */
+    height: auto;
+    font-size: 15px;
+    font-weight: 700;
+    color: orange;
+}
+
+#warntyBox> :nth-child(3) {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+}
+
+#warntyBox> :nth-child(3)> :first-child {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#warntyBox> :nth-child(3)> :nth-child(2) {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#warntyBox> :nth-child(3)> :nth-child(3) {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#warntyBox> :nth-child(3)> :last-child {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#warntyBox> :last-child {
+    height: auto;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#warntyBox> :last-child> :last-child {
+    color: blue;
+    text-decoration: underline;
+}
+
+#warntyBox> :last-child> :last-child:hover {
+    cursor: pointer;
+}
+
+#warntyBox>div>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#warntyBox>div>div>div>img {
+    height: 40px;
+    width: 40px;
+}
+
+#warntyBox>div>div>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px 10px 30px;
+    /* margin-bottom: 0px; */
+    font-size: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+#prodTitle> :nth-child(2) {
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+    /* background-color: aqua; */
+    height: auto;
+}
+
+#prodTitle> :last-child {
+    /* background-color: burlywood; */
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#prodTitle> :last-child>a>button {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    font-weight: 500;
+}
+
+#prodTitle> :last-child>a>button:hover {
+    cursor: pointer;
+}
+
+
+#prodTitle> :last-child>button {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+
+#prodTitle> :last-child>button:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+
+
+#desBox {
+    height: auto;
+    border-top: 3px solid orange;
+}
+
+#desBox> :first-child {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+#desBox>div+div {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+#reviewBox {
+    height: auto;
+    padding: 15px;
+    padding-top: 0px;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+    width: auto;
+}
+
+#reviewBox> :first-child {
+    color: orange;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#reviewBox>p+p {
+    font-size: 15px;
+    color: rgb(51, 50, 50);
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#reviewBox>div>button {
+    border: 1px solid orange;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+    background-color: orange;
+    width: 120px;
+}
+
+#reviewBox> :last-child {
+    font-size: 12px;
+}
+
+#quesBox {
+    height: auto;
+    padding: 15px;
+    /* border: 1px solid red;
+    background-color: red; */
+}
+
+#quesBox>p {
+    color: orange;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#quesBox>span>span>a>img {
+    padding-left: 10px;
+}
+
+#footerBox {
+    background-color: rgb(255, 244, 244);
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#footerBox>#options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+#options>div>p {
+    color: grey;
+    font-size: 11px;
+    padding: 3px;
+    margin-left: 10px;
+
+}
+
+#options>div>p:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#options>div {
+    padding: 20px 12px;
+}
+
+#options>div>span {
+    color: orange;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+#emailBox {
+
+    display: flex;
+
+    align-items: center;
+}
+
+#emailBox>span>button {
+    background-color: orange;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+@media all and (min-width: 481px) and (max-width: 850px) {
+    #prodImg {
+        display: block;
+    }
+
+    #prodImgBox>img {
+        height: 50%;
+        width: 50%;
+    }
+
+    #footerBox {
+        display: block;
+    }
+
+    #footerBox>#options {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #emailBox {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media all and (min-width: 101px) and (max-width: 480px) {
+    #prodImg {
+        display: block;
+    }
+
+    #prodImgBox>img {
+        height: 70%;
+        width: 70%;
+    }
+
+    #warntyBox> :nth-child(3) {
+        /* height: auto;
+        display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        gap: 10px;
+    }
+
+    #footerBox {
+        display: block;
+    }
+
+    #footerBox>#options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    #emailBox {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+}
