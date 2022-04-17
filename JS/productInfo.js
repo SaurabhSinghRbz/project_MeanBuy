@@ -146,21 +146,25 @@ anchor.target = "_blank"
 let cartButt = document.createElement("button");
 cartButt.innerHTML = "BUY NOW";
 
-let buyButt = document.createElement("button")
-buyButt.innerHTML = "ADD TO CART"
+let addToButt = document.createElement("button")
+addToButt.innerHTML = "ADD TO CART"
 cartButt.onclick = function () {
+
+};
+
+addToButt.onclick = function () {
     var cartArr = [];
     cartArr = JSON.parse(localStorage.getItem("addToCart"));
     cartArr.push(arr);
     localStorage.setItem("addToCart", JSON.stringify(cartArr));
     alert("Your item is added to cart.");
-};
-
+    cartButt.innerHTML = "GO TO CART"
+}
 
 div1div2.appendChild(nameBox);
 div1div2.appendChild(warntyDiv);
 anchor.appendChild(cartButt);
-divButt.appendChild(buyButt)
+divButt.appendChild(addToButt)
 divButt.appendChild(anchor);
 div1div2.appendChild(divButt);
 
