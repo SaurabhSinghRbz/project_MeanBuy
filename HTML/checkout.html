@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../CSS/checkout.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="rightpart">
+            <h4>Your Email & Phone Number</h4>
+            <h5>Email address</h5>
+            <h5 id="email">Email Address</h5>
+
+            <!-- <h5>Phone Number</h5> -->
+            <label>Phone Number</label><br />
+            <input type="number" placeholder="Phone Number" />
+            <br /> <br />
+
+            <div class="checkbox1">
+
+                <div id="box1" onclick="change()"></div>
+                <div class="lightgrey">I agree to be contacted throung Whatsapp for Order Updates</div>
+            </div>
+
+            <br />
+            <h4>Delivery Address</h4>
+            <label>Saved Address</label><br />
+            <input type="text" placeholder="Enter New Address" />
+            <br /> <br />
+
+            <div class="checkbox">
+                <div id="box2" onclick="change2()"></div>
+                <div class="lightgrey"> Default shipping Address</div>
+            </div>
+            <br />
+
+            <label>Name</label><br />
+            <input type="text" placeholder="Name" />
+            <br /> <br />
+
+            <div id="addressbox">
+                <div id="left">
+                    <label>Address 1</label><br />
+                    <input type="text" placeholder="Address 1" />
+                    <br /> <br />
+
+                    <label>State</label><br />
+                    <input type="text" placeholder="Type State" />
+                    <br /> <br />
+
+                    <label>Country</label><br />
+                    <input type="text" value="India" />
+
+                </div>
+
+                <!-- right part -->
+                <div id="right">
+                    <label>Address 2</label><br />
+                    <input type="text" placeholder="Address 2" />
+                    <br /> <br />
+
+                    <label>City</label><br />
+                    <input type="text" placeholder="City" />
+                    <br /> <br />
+
+                    <label>Pin code</label><br />
+                    <input type="text" placeholder="Pin Code" />
+                </div>
+            </div>
+            <br /> <br />
+            <h4>Payment Details</h4>
+            <div class="checkbox">
+                <div id="box3" onclick="change3()"></div>
+
+                <div class="lightgrey"> Same as shopping address</div>
+            </div>
+
+            <br />
+            <h4>Payment Details</h4>
+
+            <div id="selectmethod">
+
+                <div id="cod" class="change" onclick="selectCod()">
+                    <img src="https://etimg.etb2bimg.com/photo/55492753.cms" />
+                    <p>COD(Cash On Delivery</p>
+                    <div id="one" class="orange"></div>
+                </div>
+
+                <div id="card" class="change" onclick="selectCard()">
+                    <img src="http://www.pngall.com/wp-content/uploads/2016/05/Debit-Card-PNG-HD.png" />
+                    <p>Credit/Debit Card</p>
+                    <div id="two" class="orange"></div>
+                </div>
+                <div id="netbanking" class="change" onclick="selectNetBanking()"><img
+                        src="http://1.bp.blogspot.com/__fjbirlHSwg/S-d_F1pgO9I/AAAAAAAAAC8/nBJzxjV7Peg/s1600/EBANKING.bmp" />
+                    <p>Net Banking</p>
+                    <div id="three" class="orange"></div>
+                </div>
+                <div id="emi" class="change" onclick="SelectEmi()">
+                    <img src="https://www.oorjan.com/blog/wp-content/uploads/2019/02/f-2-300x257.png" />
+                    <p>EMI</p>
+                    <div id="four" class="orange"></div>
+                </div>
+                <div id="upi" class="change" onclick="SelectUpi()">
+                    <img
+                        src="https://static.financebuddha.com/blog/wp-content/uploads/2016/12/23155635/UPI1-945x709.jpg" />
+                    <p>UPI</p>
+                    <div id="five" class="orange"></div>
+                </div>
+            </div>
+            <br />
+            <div id="middlemeaao" class="lightgrey">We accept all credit and debit cards of india and international.
+            </div><br />
+            <div id="onclick"><button onclick="thankyou()">ORDER NOW!</button></div>
+
+
+        </div>
+        <div id="leftpart">
+            <div id="addingitem"></div>
+            <P class="lightorange">Edit Cart</P>
+            <hr />
+            <div id="subtotal">Subtotal:<span class="green"></span><br /><span class="lightorange">Shipping:Free</span>
+            </div>
+            <p id="total">Total:</p>
+            <p>Get up to 500.00 OFF on your First Time Prepaid Order<br />(COD excluded) with coupon <span
+                    class="lightorange"> PREPAID</span>.</p>
+            <P class="lightgrey">Got a Promotional Code? Use below:</P>
+            <div id="promo">
+                <input type="text" placeholder="Promotional Code" id="enterpromo" /><button id="apply">Apply
+                    code</button>
+
+            </div>
+            <br /> <br />
+            <hr />
+            <div class="banner">
+                <img src="https://meanbuyassets.s3.ap-south-1.amazonaws.com/mb_square.png" alt="MeanBuy India"
+                    height="100" width="100">
+                <h4 class="gray"><b>Our Shop. Your Price.</b></h4>
+                <h5 class="gray"><b>Feel the power to buy at your price.</b></h5>
+                <div class="orangebar"></div>
+            </div>
+            <div id="bannerunderline"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="../JS/checkout.js"></script>

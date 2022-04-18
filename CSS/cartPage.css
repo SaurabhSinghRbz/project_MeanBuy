@@ -41,8 +41,9 @@ a {
 
 #b>input {
 	margin-top: 30px;
-	height: 25px;
-	width: 300px;
+	height: 28px;
+	width: 350px;
+	padding: 2%;
 }
 
 #c {
@@ -51,11 +52,38 @@ a {
 	margin-left: 20px;
 }
 
+#c>button {
+	color: purple;
+}
+
+#c>button:hover {
+	text-decoration: underline;
+	color: red;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #d {
 	grid-area: d;
 }
 
+#d>button {
+	margin-left: -20px;
+	background-color: black;
+	border-radius: 5px;
 
+}
+
+div>a {
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: purple;
+}
+
+div>a:hover {
+	text-decoration: underline;
+	color: red;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 #rightDiv {
 	display: flex;
@@ -64,6 +92,12 @@ a {
 	height: auto;
 	padding: 1%;
 	margin-top: 20px;
+}
+
+#rightDiv>div>p>a:hover {
+	text-decoration: underline;
+	color: red;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #rightDiv img {

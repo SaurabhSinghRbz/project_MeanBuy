@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.meanbuy.com/assets/img/icos/apple-icon-57x57.png" />
-    <title>MeanBuy Cart</title>
+    <title>Your Cart Details</title>
     <link rel="stylesheet" href="../CSS/cartPage.css">
 </head>
 
@@ -18,19 +17,19 @@
                         alt=""></a>
             </div>
             <div id="b">
-                <input type="text" value="     Search">
+                <input type="text" placeholder="search here">
             </div>
             <div id="c" style="display:flex;gap:5px;">
                 <div>
                     <h5 style="font-size: 18px;">Shopping Cart </h5>
                 </div>
                 <div>
-                    <p style="color:red;">(0 Items)</p>
+                    <p style="color:red;" id="items">(0 Items)</p>
                 </div>
             </div>
             <div id="d">
-                <button style="margin-left: -20px;background-color: black;border-radius: 5px;"><a href="home.html"
-                        style="color: aliceblue;padding: 5px;">Continue Shopping</a></button>
+                <button><a href="../HTML/bestDeals.html" style="color: aliceblue;padding: 5px;">Continue
+                        Shopping</a></button>
             </div>
         </div>
 
@@ -41,18 +40,18 @@
             </div>
             <div>
                 <div style="text-align: center;">
-                    <p><a href="">LOGIN</a> / <a href="">SIGNUP</a></p>
+                    <p><a href="../HTML/login.html">LOGIN</a> / <a href="../HTML/signup.html">SIGNUP</a></p>
                 </div>
                 <div>
                     <h4>WELCOME GUEST</h4>
                 </div>
             </div>
             <div style="display:flex;gap:5px">
-                <div><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOltESk2kisSh56FwjCYJz1BAd8MIgxM9Cw&usqp=CAU"
-                        alt=""></div>
+                <div><a href="../HTML/cartPage.html"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOltESk2kisSh56FwjCYJz1BAd8MIgxM9Cw&usqp=CAU"
+                            alt=""></a></div>
                 <div>
-                    <p style="color: orangered;" id="cartcount">0</p>
+                    <p style="color: orangered;" id="cartCount">0</p>
                 </div>
             </div>
         </div>
@@ -64,22 +63,6 @@
             <div class="products">
                 <table>
                     <tbody class="productsTable">
-                        <!-- <tr >
-                                <td>
-                                    <div class="product">
-                                        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1610416577-vans-1610416571.jpg">
-                                        <div class="product-info">
-                                            <h3 class="product-name">New Shoes</h3>
-                                            <h4 class="product-price">₹ 1,000</h4>
-                                            <h4 class="product-offer">50%</h4>
-                                            <p class="product-quantity">Qnt: <input value="1"></p>
-                                            <button class="product-remove">
-                                                <span class="remove">Remove</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr> -->
 
                     </tbody>
                 </table>
@@ -87,17 +70,17 @@
             <div class="cart-total">
                 <p>
                     <span>Total Price</span>
-                    <span>₹ text</span>
+                    <span id="totalrupee">0</span>
                 </p>
                 <p>
                     <span>Number of Items</span>
-                    <span>2</span>
+                    <span id="numOfItem">0</span>
                 </p>
                 <p>
-                    <span>You Save</span>
-                    <span>₹ 1,000</span>
+                    <span>Select Delivary</span>
+                    <input type="date">
                 </p>
-                <a href="#">Proceed to Checkout</a>
+                <a href="../HTML/checkout.html">Proceed to Checkout</a>
             </div>
         </div>
     </div>
