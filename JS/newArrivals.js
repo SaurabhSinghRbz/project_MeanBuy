@@ -340,7 +340,34 @@ if (localStorage.getItem("productInfo") == null) {
     localStorage.setItem("productInfo", JSON.stringify([]));
 }
 
+
+var filteredData = JSON.parse(JSON.stringify(productData));
+document.querySelector('#sortInput').addEventListener('change', function () {
+    var sortType = document.querySelector('#sortInput').value;
+    if (sortType === 'none') {
+        displayAllProducts(productData);
+    } else {
+        filteredData.sort(function (a, b) {
+            if (sortType === 'popularity') {
+                return b.rating - a.rating;
+            } else if (sortType === 'lowToHigh') {
+                return a.price - b.price;
+            } else {
+                return b.price - a.price;
+            }
+
+        });
+        displayAllProducts(filteredData);
+    }
+});
+
+
+
+
+
 function displayAllProducts(product) {
+    document.querySelector('#allProducts').innerHTML = '';
+
     var allProductsDiv = document.getElementById("allProducts");
     // allProductsDiv.innerHTML = null;
     product.forEach(function (ele) {
@@ -352,7 +379,7 @@ function displayAllProducts(product) {
         div1.id = "imageBox";
 
         let imgInfo = document.createElement("a");
-        imgInfo.href = "./productInfo.html";
+        imgInfo.href = "../HTML/productInfo.html";
         let div1img = document.createElement("img");
         div1img.src = ele.image;
         imgInfo.appendChild(div1img);
@@ -385,6 +412,9 @@ function displayAllProducts(product) {
         div3.appendChild(div3price);
         div3.appendChild(div3off);
 
+
+
+
         prodCon.appendChild(div1);
         prodCon.appendChild(div2);
         prodCon.appendChild(div3);
@@ -398,6 +428,139 @@ function displayAllProducts(product) {
     });
 }
 displayAllProducts(productData);
+
+function filterLessthan1000(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.price <= 1000) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+
+function filterLessthan3000(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.price <= 3000) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+
+function filterLessthan5000(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.price <= 5000) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+
+function filterLessthan10000(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.price <= 10000) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+
+document.querySelector('#filterInputP').addEventListener('change', function () {
+    var sortType = document.querySelector('#filterInputP').value;
+    if (sortType === 'none') {
+        filterMore4(productData);
+    } else if (sortType === 'less1000') {
+        var data = filterLessthan1000(productData);
+        displayAllProducts(data);
+    } else if (sortType === 'less3000') {
+        var data = filterLessthan3000(productData);
+        displayAllProducts(data);
+    } else if (sortType === 'less5000') {
+        var data = filterLessthan5000(productData);
+        displayAllProducts(data);
+    } else if (sortType === 'less10000') {
+        var data = filterLessthan10000(productData);
+        displayAllProducts(data);
+    }
+});
+
+function filterMore4(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.rating >= 4) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+function filterMore3(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.rating >= 3) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+function filterMore2(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.rating >= 2) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+function filterMore1(productData) {
+    var newData = productData.filter(function (prdoductItem) {
+        if (prdoductItem.rating >= 1) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    return newData;
+}
+
+document.querySelector('#filterInputR').addEventListener('change', function () {
+    var sortType = document.querySelector('#filterInputR').value;
+    if (sortType === 'none') {
+        displayAllProducts(productData);
+    } else if (sortType === '4star') {
+        var data = filterMore4(productData);
+        displayAllProducts(data);
+    } else if (sortType === '3star') {
+        var data = filterMore3(productData);
+        displayAllProducts(data);
+    } else if (sortType === '2star') {
+        var data = filterMore2(productData);
+        displayAllProducts(data);
+    } else if (sortType === '1star') {
+        var data = filterMore1(productData);
+        displayAllProducts(data);
+    }
+});
+
+
+
+
+
+
+
+
+
+
 
 var subcategories = [
     "Bluetooth Earphone",
