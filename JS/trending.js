@@ -341,9 +341,7 @@ if (localStorage.getItem("productInfo") == null) {
     localStorage.setItem("productInfo", JSON.stringify([]));
 }
 
-if (localStorage.getItem("productInfo") == null) {
-    localStorage.setItem("productInfo", JSON.stringify([]));
-}
+
 
 
 var filteredData = JSON.parse(JSON.stringify(productData));
