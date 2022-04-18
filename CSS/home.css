@@ -211,6 +211,10 @@ img {
 
 }
 
+.first p:hover {
+  text-decoration: underline;
+}
+
 .links ul li:hover .submenu {
   display: block;
   display: flex;

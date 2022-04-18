@@ -237,10 +237,7 @@ img {
     display: flex;
 }
 
-#filterBox {
-    height: 50px;
-    background-color: aqua;
-}
+
 
 #footerBox {
     background-color: rgb(255, 244, 244);
@@ -318,9 +315,63 @@ img {
 }
 
 #subCat>p:hover {
+
     color: black;
     text-decoration: underline;
     cursor: pointer;
+}
+
+#filterBox {
+    height: auto;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    /* border-bottom: 3px solid orange;
+    border-top: 3px solid orange; */
+    /* background-color: rgb(233, 233, 233); */
+    font-weight: 500;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+}
+
+
+#sortInput {
+    border: 2px solid blue;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#sortInput:hover {
+    cursor: pointer;
+}
+
+
+#filterInputP:hover {
+    cursor: pointer;
+}
+
+#filterInputP {
+    border: 2px solid blue;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#filterInputR:hover {
+    cursor: pointer;
+}
+
+#filterInputR {
+    border: 2px solid blue;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 15px;
 }
 
 #allProducts {
@@ -332,6 +383,7 @@ img {
     gap: 60px;
     row-gap: 120px;
     padding: 4%;
+    padding-top: 0%;
     margin-bottom: 5%;
 }
 

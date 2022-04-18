@@ -163,17 +163,40 @@
 
     </div>
 
+    <div id="filterBox">Apply Fliters Here :--
+        <select id="sortInput">
+            <option value="none">Sort Items </option>
+            <option value="popularity">Popularity</option>
+            <option value="lowToHigh">Price -- Low to high</option>
+            <option value="highToLow">Price -- Hight to low</option>
+        </select>
 
+        <select id="filterInputP">
+            <option value="none">Filter Items (Price) </option>
+            <option value="less1000">Less than 1000</option>
+            <option value="less3000">Less than 3000</option>
+            <option value="less5000">Less than 5000</option>
+            <option value="less10000">Less than 10000</option>
+        </select>
+
+        <select id="filterInputR">
+            <option value="none">Filter Items (Rating) </option>
+            <option value="4star">4★ & above</option>
+            <option value="3star">3★ & above</option>
+            <option value="2star">2★ & above</option>
+            <option value="1star">1★ & above</option>
+        </select>
+    </div>
 
 
     <div id="contentBox">
         <div id="subCat">
             <span>Subactgeories</span>
         </div>
-        <div>
-            <div id="filterBox"></div>
-            <div id="allProducts"></div>
-        </div>
+        <!-- <div> -->
+
+        <div id="allProducts"></div>
+        <!-- </div> -->
     </div>
     <div id="footerBox">
         <div id="options">
@@ -211,5 +234,6 @@
     </div>
 </body>
 <script src="../JS/bestDeals.js"></script>
+<!-- <script src="../JS/home.js"></script> -->
 
 </html>
