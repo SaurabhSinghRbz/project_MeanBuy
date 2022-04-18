@@ -10,4 +10,7 @@ iPrice, the enterprise level integrated solution brings this flexible, demand dr
 We specialize in product price optimization, inventory turnover maximization, and are able to provide all of this while maintaining brand quality and customer loyalty. Our back-end has been designed and developed to optimally serve the needs of our merchants, offering them valuable demand driven pricing data, a fully customizable API ensuring cross-platform compatibility, and a highly automated system so as to minimize overhead. We stand by our clients and believe flexibility, quality, and innovation are the key factors to a long lasting business relationship. 
 
 
-![pcs](https://user-images.githubusercontent.com/90378786/163797700-2113524d-c061-48d0-8d1e-893a956c7845.png)
+
+TOOLS:-
+Vs Code
+GitHub
