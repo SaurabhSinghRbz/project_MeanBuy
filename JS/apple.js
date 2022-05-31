@@ -125,3 +125,5 @@ var productData = [
     {
         count.textContent = a.length
     }
+
+    
